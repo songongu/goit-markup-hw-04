@@ -29,7 +29,7 @@
             <a class="site-nav link-a-href" href="./index.html">Agencja</a>
           </li>
           <li class="section-nav">
-            <a class="site-nav link-a-href" href="./portfolio.html">Portfolio</a>
+            <a class="site-nav current link-a-href" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="section-nav">
             <a class="site-nav link-a-href" href="#">Kontakt</a>
@@ -38,10 +38,18 @@
       </nav>
       <ul class="contact link-ul section-item section-list">
         <li class="contact-link contact-item">
-          <a href="mailto:info@devstudio.com" class="mail-active link-a-href">info@devstudio.com</a>
+          <a href="mailto:info@devstudio.com" class="mail-active link-a-href">
+            <svg class="contacts-icon mail" width="16" height="12">
+              <use href="./images/sprite/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a>
         </li>
         <li class="contact-phone contact-item">
-          <a href="tel:+48 111 111 111" class="phone-active link-a-href">+48 111 111 111</a>
+          <a href="tel:+48 111 111 111" class="phone-active link-a-href">
+            <svg class="contacts-icon phone" width="10" height="16">
+              <use href="./images/sprite/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            +48 111 111 111</a>
         </li>
       </ul>
     </div>
@@ -206,28 +214,64 @@
         </div>
       </section>
     </main>
+    
 
     <!--footer-->
     <footer class="footer">
-      <div class="container">
-        <a class="logo-footer" href="./index.html">
-          <span class="logo-style">Web</span>Studio</a
-        >
-        <address>
-          <ul class="link-ul section-item-footer">
-            <li class="footer-text section-footer">
-              <a href="https://goo.gl/maps/VcPTf6uv3HtVNKEU8" target="_blank"
-                class="footer-address link-a-href">m. Warszawa, Aleje Jerozolimskie 21
+      <div class="container box">
+        <div class="box-one">
+          <a class="logo-footer" href="./index.html">
+            <span class="logo-style">Web</span>Studio</a>
+          <address>
+            <ul class="link-ul section-item-footer">
+              <li class="footer-text section-footer">
+                <a href="https://goo.gl/maps/VcPTf6uv3HtVNKEU8" target="_blank" rel="noopener noreferrer"
+                  class="footer-address link-a-href">m. Warszawa, Aleje Jerozolimskie 21
+                </a>
+              </li>
+              <li class="section-footer">
+                <a href="tel:+48111111111" class="footer-phone link-a-href">+48 111 111 111</a>
+              </li>
+              <li class="section-footer">
+                <a href="mailto:info@example.com" class="footer-mail link-a-href">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+    
+        <div class="container-join">
+          <h2 class="footer-text">Dołącz do nas</h2>
+          <ul class="link-ul join-ul section-item-footer">
+            <li class="join-title section-footer">
+              <a class="join-link" href="#" aria-label="link do Instagram">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/sprite/symbol-defs.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="section-footer">
-              <a href="tel:+48 111 111 111" class="footer-phone link-a-href">+48 111 111 111</a>
+            <li class="join-title section-footer">
+              <a class="join-link" href="#" aria-label="link do Twitter">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/sprite/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="section-footer">
-              <a href="mailto:info@devstudio.com" class="footer-mail link-a-href">info@devstudio.com</a>
+            <li class="join-title section-footer">
+              <a class="join-link" href="#" aria-label="link do Facebook">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/sprite/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-title section-footer">
+              <a class="join-link" href="#" aria-label="Link do Linkedin">
+                <svg class="join-icon" width="20" height="20">
+                  <use href="./images/sprite/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

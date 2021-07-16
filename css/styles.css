@@ -8,6 +8,7 @@
   --button-second-color: #188ce8;
   --button-galery-box: #f5f4fa;
   --border-color: #ececec;
+  --border-second-color: #afb1b8;
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 }
@@ -107,10 +108,13 @@ img {
 }
 
 /*__________________________________ linki nawigacjyjne_______________________________ */
-.site-nav,
+.site-nav {
+  color: var(--section-text-color);
+}
+
 .mail-active,
 .phone-active {
-  color: var(--section-text-color);
+  color: var(--primary-text-color);
 }
 
 /* ______________________________________HEADER____________________________________________ */
@@ -119,23 +123,36 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+
+.mail-active,
+.phone-active {
+  display: flex;
+  align-items: center;
+}
+
 .mail-active:hover,
 .mail-active:focus,
 .phone-active:hover,
 .phone-active:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* _____________________________________kontakty HEADER___________________________________ */
 .section-list {
   margin-left: auto;
 }
+
 .contact-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .section-nav:not(:last-child) {
   margin-right: 50px;
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  color: var(--primary-text-color);
 }
 
 /* _____________________________________________HERO_______________________________________ */
@@ -144,6 +161,11 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--primary-heder-footer-color);
+  flex-grow: 1;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('/images/img-hero.jpg');
+  background-size: cover;
+  max-width: 1600px;
 }
 
 .hero-title {
@@ -243,7 +265,38 @@ img {
   margin-top: -30px;
   margin-left: -30px;
 }
+/* dekoracja kolorów i ikon */
+.headline-flex {
+  display: flex;
+}
 
+.section-li {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: block;
+  justify-content: space-between;
+}
+
+.section-li {
+  width: 270px;
+  box-sizing: border-box;
+}
+
+.section-ul-headline {
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.headline-div {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-galery-box);
+  border: 1px solid var(--button-galery-box);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 /* ____________________________________zdjęcia______________________________________ */
 .wort-item {
   margin-bottom: 50px;
@@ -268,6 +321,8 @@ img {
   flex-wrap: wrap;
   margin-top: 30px;
   margin-left: 30px;
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .section-ul-team {
@@ -284,7 +339,7 @@ img {
 
 .team-box-link {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /* __________________________________Team______________________________________ */
@@ -310,6 +365,78 @@ img {
   margin-bottom: 16px;
 }
 
+.contact-icon {
+  color: var(--border-second-color);
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
+/* nasi partnerzy */
+.partner {
+  margin-bottom: 0;
+  padding-bottom: 94px;
+}
+
+.title-partner {
+  color: var(--section-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.item-partner {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -30px;
+}
+
+.section-partner {
+  margin-left: 30px;
+}
+
+.partnet-link {
+  fill: var(--border-second-color);
+  border: 1px solid var(--border-second-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnet-link:hover,
+.partnet-link:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  fill: var(--accent-color);
+}
+
+.link-icon {
+  color: var(--border-second-color);
+}
 /* _______________________________________FOOTER__________________________ */
 
 .section-footer:not(:last-child) {
@@ -350,6 +477,52 @@ img {
   text-decoration: none;
 }
 
+.footer-text {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+}
+.box {
+  display: flex;
+  align-items: baseline;
+}
+
+.box-one {
+  margin-right: 70px;
+}
+
+.join-ul {
+  display: flex;
+}
+
+.join-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--primary-white-color);
+}
+
+.join-icon {
+  color: var(--primary-white-color);
+}
+
+.join-title {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
 /* _____________________________________nawigacja_____________________________________ */
 .section-photo-item {
   padding-top: 94px;
@@ -386,6 +559,16 @@ img {
   flex-wrap: wrap;
   margin-top: 30px;
   margin-left: 30px;
+}
+
+.galery-link {
+  display: block;
+}
+
+.galery-link:hover,
+.galery-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*_____________________________________Galeria fotosów _____________________________________ */
