@@ -20,7 +20,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  list-style: none;
+  text-decoration: none;
 }
+
+link.ul
+
+
 
 /* ===geometria=== */
 
