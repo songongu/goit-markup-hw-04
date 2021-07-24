@@ -24,9 +24,15 @@ body {
   text-decoration: none;
 }
 
-link.ul
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
 
-
+button {
+  cursor: pointer;
+}
 
 /* ===geometria=== */
 
@@ -51,22 +57,6 @@ ol {
 
 img {
   display: block;
-}
-
-/* ===bezkropek=== */
-.link-ul {
-  list-style: none;
-}
-
-/* ===bezkropek linków=== */
-.link-a-href {
-  text-decoration: none;
-}
-
-/* ===kursor=== */
-.button,
-.button-galery {
-  cursor: pointer;
 }
 
 /* ===kontenery=== */
